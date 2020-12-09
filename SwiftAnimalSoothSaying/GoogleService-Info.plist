@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>432008685058-2efq4t5qu5l8r7r25fej4lfjoqn67gu2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.432008685058-2efq4t5qu5l8r7r25fej4lfjoqn67gu2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB8fHDFg_KPj2NMMtlD9iId5dY-Eih2Iu4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>432008685058</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.naoki.SwiftAnimalSoothSaying</string>
+	<key>PROJECT_ID</key>
+	<string>swift5animalsoothsaying</string>
+	<key>STORAGE_BUCKET</key>
+	<string>swift5animalsoothsaying.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:432008685058:ios:f4ff0516618034d6f4691b</string>
+	<key>DATABASE_URL</key>
+	<string>https://swift5animalsoothsaying.firebaseio.com</string>
+</dict>
+</plist>
