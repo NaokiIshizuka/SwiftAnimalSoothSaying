@@ -92,6 +92,17 @@ class RegisterViewController: UIViewController {
         
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        emailTextField.endEditing(true)
+        passwordTextField.endEditing(true)
+        usernameTextFirld.endEditing(true)
+        yearTextField.endEditing(true)
+        monthTextField.endEditing(true)
+        dayTextField.endEditing(true)
+        
+    }
+    
     func table(year: String, month: String, day: String) -> Int{
         
         let year = Int(year)

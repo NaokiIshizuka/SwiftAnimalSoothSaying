@@ -15,6 +15,7 @@ target 'SwiftAnimalSoothSaying' do
   pod 'SDWebImage', '~> 5.0'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'ChameleonFramework'
 
 # Optionally, include the Swift extensions if you're using Swift.
   pod 'FirebaseFirestoreSwift'

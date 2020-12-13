@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		133D840D2573F2450038A496 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133D840C2573F2450038A496 /* LoginViewController.swift */; };
 		133D84102574AFDC0038A496 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133D840F2574AFDC0038A496 /* RegisterViewController.swift */; };
+		136FC5E125836F8100CF8055 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136FC5E025836F8100CF8055 /* Message.swift */; };
 		1371E2F1257F6E1B000D4052 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1371E2F0257F6E1A000D4052 /* ChatViewController.swift */; };
+		1371E2F52582611B000D4052 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1371E2F32582611B000D4052 /* CustomCell.swift */; };
+		1371E2F62582611C000D4052 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1371E2F42582611B000D4052 /* CustomCell.xib */; };
 		1378327D25777063005E46E8 /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378327C25777063005E46E8 /* AnimalViewController.swift */; };
 		13EC8DEE2568E5A5009C5D1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC8DED2568E5A5009C5D1C /* AppDelegate.swift */; };
 		13EC8DF02568E5A5009C5D1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC8DEF2568E5A5009C5D1C /* SceneDelegate.swift */; };
@@ -24,7 +27,10 @@
 /* Begin PBXFileReference section */
 		133D840C2573F2450038A496 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		133D840F2574AFDC0038A496 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		136FC5E025836F8100CF8055 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		1371E2F0257F6E1A000D4052 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		1371E2F32582611B000D4052 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		1371E2F42582611B000D4052 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		1378327C25777063005E46E8 /* AnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
 		13EC8DEA2568E5A5009C5D1C /* SwiftAnimalSoothSaying.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAnimalSoothSaying.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13EC8DED2568E5A5009C5D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +91,7 @@
 		13EE7100256A491800AC6B6B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				136FC5E025836F8100CF8055 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,6 +102,8 @@
 				13EC8DF32568E5A5009C5D1C /* Main.storyboard */,
 				13EC8DF62568E5AE009C5D1C /* Assets.xcassets */,
 				13EC8DF82568E5AE009C5D1C /* LaunchScreen.storyboard */,
+				1371E2F32582611B000D4052 /* CustomCell.swift */,
+				1371E2F42582611B000D4052 /* CustomCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1371E2F62582611C000D4052 /* CustomCell.xib in Resources */,
 				13EC8DFA2568E5AE009C5D1C /* LaunchScreen.storyboard in Resources */,
 				13EC8E022568EAF6009C5D1C /* GoogleService-Info.plist in Resources */,
 				13EC8DF72568E5AE009C5D1C /* Assets.xcassets in Resources */,
@@ -249,9 +259,11 @@
 				133D840D2573F2450038A496 /* LoginViewController.swift in Sources */,
 				133D84102574AFDC0038A496 /* RegisterViewController.swift in Sources */,
 				13EC8DF22568E5A5009C5D1C /* ViewController.swift in Sources */,
+				136FC5E125836F8100CF8055 /* Message.swift in Sources */,
 				1371E2F1257F6E1B000D4052 /* ChatViewController.swift in Sources */,
 				13EC8DEE2568E5A5009C5D1C /* AppDelegate.swift in Sources */,
 				1378327D25777063005E46E8 /* AnimalViewController.swift in Sources */,
+				1371E2F52582611B000D4052 /* CustomCell.swift in Sources */,
 				13EC8DF02568E5A5009C5D1C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UFNQPY3S9J;
 				INFOPLIST_FILE = SwiftAnimalSoothSaying/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -417,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UFNQPY3S9J;
 				INFOPLIST_FILE = SwiftAnimalSoothSaying/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (

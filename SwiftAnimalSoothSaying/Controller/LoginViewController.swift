@@ -40,5 +40,13 @@ class LoginViewController: UIViewController {
         
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        emailTextField.endEditing(true)
+        passwordTextField.endEditing(true)
+        
+        
+    }
+    
 
 }
