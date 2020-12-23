@@ -9,10 +9,7 @@ target 'SwiftAnimalSoothSaying' do
 
   pod 'Firebase'
   pod 'Firebase/Auth'
-  pod 'Alamofire', '~> 5.0.0-beta.5'
-  pod 'SwiftyJSON', '~> 4.0'
   pod 'SegementSlide'
-  pod 'SDWebImage', '~> 5.0'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'ChameleonFramework'

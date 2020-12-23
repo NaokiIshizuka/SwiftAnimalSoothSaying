@@ -212,7 +212,6 @@ PODS:
     - abseil/base/base_internal
     - abseil/base/config
     - abseil/meta/type_traits
-  - Alamofire (5.0.5)
   - BoringSSL-GRPC (0.0.7):
     - BoringSSL-GRPC/Implementation (= 0.0.7)
     - BoringSSL-GRPC/Interface (= 0.0.7)
@@ -336,28 +335,20 @@ PODS:
   - nanopb/decode (1.30906.0)
   - nanopb/encode (1.30906.0)
   - PromisesObjC (1.2.11)
-  - SDWebImage (5.10.0):
-    - SDWebImage/Core (= 5.10.0)
-  - SDWebImage/Core (5.10.0)
   - SegementSlide (3.0.1)
-  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.0.0-beta.5)
   - ChameleonFramework
   - Firebase
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Firestore
   - FirebaseFirestoreSwift
-  - SDWebImage (~> 5.0)
   - SegementSlide
-  - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
     - abseil
-    - Alamofire
     - BoringSSL-GRPC
     - ChameleonFramework
     - Firebase
@@ -377,13 +368,10 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - PromisesObjC
-    - SDWebImage
     - SegementSlide
-    - SwiftyJSON
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
-  Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Firebase: c23a36d9e4cdf7877dfcba8dd0c58add66358999
@@ -403,10 +391,8 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
-  SDWebImage: 9169792e9eec3e45bba2a0c02f74bf8bd922d1ee
   SegementSlide: 83b56ffb66b9c0edc4e4f2a74229309c62915db3
-  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 5a6dfe22bf3f54ab79f8131f854b5c3455a5c2d2
+PODFILE CHECKSUM: f734f1c6c3a38b907757acb7daaea075eb8999c8
 
 COCOAPODS: 1.8.4

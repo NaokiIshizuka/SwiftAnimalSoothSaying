@@ -13,16 +13,31 @@ import FirebaseFirestore
 
 class AnimalViewController: UIViewController {
     
+    /*
+    @IBOutlet weak var topView: UIView!
     
-    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var animalView: UIView!
+    
+    @IBOutlet weak var characterView: UIView!
+    
+    
+    @IBOutlet weak var nextButton: UIButton!
+    
+    @IBOutlet weak var yourAnimalLabel: UILabel!
     
     @IBOutlet weak var animalLabel: UILabel!
     
     @IBOutlet weak var animalImage: UIImageView!
     
+    @IBOutlet weak var allPersonalAnimalLabel: UILabel!
+    
     @IBOutlet weak var animalDetailLabel: UILabel!
     
+    @IBOutlet weak var yourCharacterLabel: UILabel!
+    
     @IBOutlet weak var animalCharacterLabel: UILabel!
+    
+    @IBOutlet weak var personalityLabel: UILabel!
     
     @IBOutlet weak var detailManLabel: UILabel!
     
@@ -38,10 +53,15 @@ class AnimalViewController: UIViewController {
     
     let userID = Auth.auth().currentUser?.uid
     let db = Firestore.firestore()
+ */
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        
+        
+/*
         let docRefUsers = db.collection("users").document(String(userID!))
         
         let docRefCharacterAnimal = db.collection("animals").document("characteranimal")
@@ -57,8 +77,6 @@ class AnimalViewController: UIViewController {
                 print("Document data was empty.")
                 return
             }
-            
-            self.userNameLabel.text = data["userName"] as? String
             
             animal = data["animal"] as! String
             animalCharacter = data["characterAnimal"] as! String
@@ -105,9 +123,10 @@ class AnimalViewController: UIViewController {
                 
             }
             
-        }
-        
+        }*/
+     
     }
+ 
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

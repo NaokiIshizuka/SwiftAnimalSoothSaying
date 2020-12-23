@@ -151,9 +151,9 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
                 }
                     
             }
-        /*cell.messageLabel.text = chatArray[indexPath.row].message
+        cell.messageLabel.text = chatArray[indexPath.row].message
         cell.userNameLabel.text = chatArray[indexPath.row].sender
-        print(cell.messageLabel.text! + "aaaaa")*/
+        print(cell.messageLabel.text! + "aaaaa")
         return cell
         
         
