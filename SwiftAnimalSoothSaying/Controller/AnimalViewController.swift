@@ -124,4 +124,20 @@ class AnimalViewController: UIViewController {
         
     }
     
+    @IBAction func logout(_ sender: Any) {
+        
+        let firebaseAuth = Auth.auth()
+        do {
+          try firebaseAuth.signOut()
+            
+            
+        } catch let signOutError as NSError {
+          print ("Error signing out: %@", signOutError)
+        }
+        
+        self.performSegue(withIdentifier: "logout", sender: self)
+        
+    }
+    
+    
 }
