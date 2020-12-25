@@ -13,35 +13,25 @@ import FirebaseFirestore
 
 class AnimalViewController: UIViewController {
     
-    /*
-    @IBOutlet weak var topView: UIView!
-    
-    @IBOutlet weak var animalView: UIView!
-    
-    @IBOutlet weak var characterView: UIView!
-    
-    
-    @IBOutlet weak var nextButton: UIButton!
-    
-    @IBOutlet weak var yourAnimalLabel: UILabel!
     
     @IBOutlet weak var animalLabel: UILabel!
     
     @IBOutlet weak var animalImage: UIImageView!
     
-    @IBOutlet weak var allPersonalAnimalLabel: UILabel!
     
     @IBOutlet weak var animalDetailLabel: UILabel!
     
-    @IBOutlet weak var yourCharacterLabel: UILabel!
-    
     @IBOutlet weak var animalCharacterLabel: UILabel!
+    
     
     @IBOutlet weak var personalityLabel: UILabel!
     
-    @IBOutlet weak var detailManLabel: UILabel!
     
-    @IBOutlet weak var detailWomanLabel: UILabel!
+    @IBOutlet weak var animalDetailView: UIView!
+    
+    
+    @IBOutlet weak var logoutButton: UIButton!
+    
     
     var animal = String()
     
@@ -53,15 +43,16 @@ class AnimalViewController: UIViewController {
     
     let userID = Auth.auth().currentUser?.uid
     let db = Firestore.firestore()
- */
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        animalDetailView.layer.cornerRadius = 10
         
-        
-        
-/*
+        logoutButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        logoutButton.titleLabel?.minimumScaleFactor = 0.3
+
         let docRefUsers = db.collection("users").document(String(userID!))
         
         let docRefCharacterAnimal = db.collection("animals").document("characteranimal")
@@ -114,16 +105,15 @@ class AnimalViewController: UIViewController {
                     
                     characterDetail = data3[animalCharacter] as! String
                     
-                    let characterDetailArray = characterDetail.components(separatedBy: " ")
+                    let characterDetailArray = characterDetail.replacingOccurrences(of: " ", with: "\n")
                     
-                    detailManLabel.text = characterDetailArray[0]
-                    detailWomanLabel.text = characterDetailArray[1]
+                    personalityLabel.text = characterDetailArray
                     
                 }
                 
             }
             
-        }*/
+        }
      
     }
  
