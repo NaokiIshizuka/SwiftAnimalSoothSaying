@@ -9,11 +9,19 @@
 /* Begin PBXBuildFile section */
 		133D840D2573F2450038A496 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133D840C2573F2450038A496 /* LoginViewController.swift */; };
 		133D84102574AFDC0038A496 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133D840F2574AFDC0038A496 /* RegisterViewController.swift */; };
+		1348D97D25A46AC10068A1CC /* chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1348D97C25A46AC10068A1CC /* chat.storyboard */; };
+		1348D98125A47A790068A1CC /* list.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1348D98025A47A790068A1CC /* list.storyboard */; };
+		136A41172595BE5000F45ED2 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136A41162595BE4F00F45ED2 /* ListViewController.swift */; };
+		136A411B25984DAD00F45ED2 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136A411925984DAC00F45ED2 /* PersonCell.swift */; };
+		136A411C25984DAD00F45ED2 /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 136A411A25984DAC00F45ED2 /* PersonCell.xib */; };
 		136FC5E125836F8100CF8055 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136FC5E025836F8100CF8055 /* Message.swift */; };
 		1371E2F1257F6E1B000D4052 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1371E2F0257F6E1A000D4052 /* ChatViewController.swift */; };
 		1371E2F52582611B000D4052 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1371E2F32582611B000D4052 /* CustomCell.swift */; };
 		1371E2F62582611C000D4052 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1371E2F42582611B000D4052 /* CustomCell.xib */; };
 		1378327D25777063005E46E8 /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378327C25777063005E46E8 /* AnimalViewController.swift */; };
+		13BE0E67259DC0CA00AA3990 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13BE0E66259DC0CA00AA3990 /* ChatInputAccessoryView.xib */; };
+		13BE0E6A259DC22600AA3990 /* ChatInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BE0E69259DC22600AA3990 /* ChatInputAccessoryView.swift */; };
+		13BE0E6F25A028F300AA3990 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BE0E6E25A028F300AA3990 /* UIColor-Extension.swift */; };
 		13EC8DEE2568E5A5009C5D1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC8DED2568E5A5009C5D1C /* AppDelegate.swift */; };
 		13EC8DF02568E5A5009C5D1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC8DEF2568E5A5009C5D1C /* SceneDelegate.swift */; };
 		13EC8DF22568E5A5009C5D1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC8DF12568E5A5009C5D1C /* ViewController.swift */; };
@@ -27,11 +35,19 @@
 /* Begin PBXFileReference section */
 		133D840C2573F2450038A496 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		133D840F2574AFDC0038A496 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		1348D97C25A46AC10068A1CC /* chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = chat.storyboard; sourceTree = "<group>"; };
+		1348D98025A47A790068A1CC /* list.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = list.storyboard; sourceTree = "<group>"; };
+		136A41162595BE4F00F45ED2 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		136A411925984DAC00F45ED2 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		136A411A25984DAC00F45ED2 /* PersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
 		136FC5E025836F8100CF8055 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		1371E2F0257F6E1A000D4052 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		1371E2F32582611B000D4052 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		1371E2F42582611B000D4052 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		1378327C25777063005E46E8 /* AnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
+		13BE0E66259DC0CA00AA3990 /* ChatInputAccessoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatInputAccessoryView.xib; sourceTree = "<group>"; };
+		13BE0E69259DC22600AA3990 /* ChatInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputAccessoryView.swift; sourceTree = "<group>"; };
+		13BE0E6E25A028F300AA3990 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		13EC8DEA2568E5A5009C5D1C /* SwiftAnimalSoothSaying.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAnimalSoothSaying.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13EC8DED2568E5A5009C5D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13EC8DEF2568E5A5009C5D1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,10 +116,16 @@
 			isa = PBXGroup;
 			children = (
 				13EC8DF32568E5A5009C5D1C /* Main.storyboard */,
+				1348D97C25A46AC10068A1CC /* chat.storyboard */,
+				1348D98025A47A790068A1CC /* list.storyboard */,
 				13EC8DF62568E5AE009C5D1C /* Assets.xcassets */,
 				13EC8DF82568E5AE009C5D1C /* LaunchScreen.storyboard */,
 				1371E2F32582611B000D4052 /* CustomCell.swift */,
 				1371E2F42582611B000D4052 /* CustomCell.xib */,
+				136A411925984DAC00F45ED2 /* PersonCell.swift */,
+				136A411A25984DAC00F45ED2 /* PersonCell.xib */,
+				13BE0E69259DC22600AA3990 /* ChatInputAccessoryView.swift */,
+				13BE0E66259DC0CA00AA3990 /* ChatInputAccessoryView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -118,6 +140,8 @@
 				133D840F2574AFDC0038A496 /* RegisterViewController.swift */,
 				1378327C25777063005E46E8 /* AnimalViewController.swift */,
 				1371E2F0257F6E1A000D4052 /* ChatViewController.swift */,
+				136A41162595BE4F00F45ED2 /* ListViewController.swift */,
+				13BE0E6E25A028F300AA3990 /* UIColor-Extension.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -201,8 +225,12 @@
 			files = (
 				1371E2F62582611C000D4052 /* CustomCell.xib in Resources */,
 				13EC8DFA2568E5AE009C5D1C /* LaunchScreen.storyboard in Resources */,
+				1348D98125A47A790068A1CC /* list.storyboard in Resources */,
+				13BE0E67259DC0CA00AA3990 /* ChatInputAccessoryView.xib in Resources */,
+				136A411C25984DAD00F45ED2 /* PersonCell.xib in Resources */,
 				13EC8E022568EAF6009C5D1C /* GoogleService-Info.plist in Resources */,
 				13EC8DF72568E5AE009C5D1C /* Assets.xcassets in Resources */,
+				1348D97D25A46AC10068A1CC /* chat.storyboard in Resources */,
 				13EC8DF52568E5A5009C5D1C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +291,11 @@
 				1371E2F1257F6E1B000D4052 /* ChatViewController.swift in Sources */,
 				13EC8DEE2568E5A5009C5D1C /* AppDelegate.swift in Sources */,
 				1378327D25777063005E46E8 /* AnimalViewController.swift in Sources */,
+				136A411B25984DAD00F45ED2 /* PersonCell.swift in Sources */,
+				13BE0E6F25A028F300AA3990 /* UIColor-Extension.swift in Sources */,
+				13BE0E6A259DC22600AA3990 /* ChatInputAccessoryView.swift in Sources */,
 				1371E2F52582611B000D4052 /* CustomCell.swift in Sources */,
+				136A41172595BE5000F45ED2 /* ListViewController.swift in Sources */,
 				13EC8DF02568E5A5009C5D1C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

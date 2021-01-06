@@ -140,4 +140,22 @@ class AnimalViewController: UIViewController {
     }
     
     
+    @IBAction func talkButton(_ sender: Any) {
+        
+        let storyboard = UIStoryboard.init(name: "chat", bundle: nil)
+        let chatViewController = storyboard.instantiateViewController(withIdentifier: "ChatViewController")
+        navigationController?.pushViewController(chatViewController, animated: true)
+        
+    }
+    
+    @IBAction func listButton(_ sender: Any) {
+        
+        let storyboard = UIStoryboard.init(name: "list", bundle: nil)
+        let chatViewController = storyboard.instantiateViewController(withIdentifier: "ListViewController")
+        navigationController?.pushViewController(chatViewController, animated: true)
+        
+    }
+    
+    
+    
 }
