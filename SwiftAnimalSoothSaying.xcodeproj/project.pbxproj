@@ -19,6 +19,7 @@
 		1371E2F52582611B000D4052 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1371E2F32582611B000D4052 /* CustomCell.swift */; };
 		1371E2F62582611C000D4052 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1371E2F42582611B000D4052 /* CustomCell.xib */; };
 		1378327D25777063005E46E8 /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378327C25777063005E46E8 /* AnimalViewController.swift */; };
+		1399689325A6149F0028D119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1399689225A6149F0028D119 /* LaunchScreen.storyboard */; };
 		13BE0E67259DC0CA00AA3990 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13BE0E66259DC0CA00AA3990 /* ChatInputAccessoryView.xib */; };
 		13BE0E6A259DC22600AA3990 /* ChatInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BE0E69259DC22600AA3990 /* ChatInputAccessoryView.swift */; };
 		13BE0E6F25A028F300AA3990 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BE0E6E25A028F300AA3990 /* UIColor-Extension.swift */; };
@@ -27,7 +28,6 @@
 		13EC8DF22568E5A5009C5D1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC8DF12568E5A5009C5D1C /* ViewController.swift */; };
 		13EC8DF52568E5A5009C5D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EC8DF32568E5A5009C5D1C /* Main.storyboard */; };
 		13EC8DF72568E5AE009C5D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13EC8DF62568E5AE009C5D1C /* Assets.xcassets */; };
-		13EC8DFA2568E5AE009C5D1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EC8DF82568E5AE009C5D1C /* LaunchScreen.storyboard */; };
 		13EC8E022568EAF6009C5D1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13EC8E012568EAF5009C5D1C /* GoogleService-Info.plist */; };
 		D29A74E8376D9CC5A2449E45 /* Pods_SwiftAnimalSoothSaying.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7E76E633A87DE70EC07F8A /* Pods_SwiftAnimalSoothSaying.framework */; };
 /* End PBXBuildFile section */
@@ -45,6 +45,7 @@
 		1371E2F32582611B000D4052 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		1371E2F42582611B000D4052 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		1378327C25777063005E46E8 /* AnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
+		1399689225A6149F0028D119 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13BE0E66259DC0CA00AA3990 /* ChatInputAccessoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatInputAccessoryView.xib; sourceTree = "<group>"; };
 		13BE0E69259DC22600AA3990 /* ChatInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputAccessoryView.swift; sourceTree = "<group>"; };
 		13BE0E6E25A028F300AA3990 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		13EC8DF12568E5A5009C5D1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		13EC8DF42568E5A5009C5D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13EC8DF62568E5AE009C5D1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		13EC8DF92568E5AE009C5D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13EC8DFB2568E5AE009C5D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13EC8E012568EAF5009C5D1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		647439F781BCF52D873426AB /* Pods-SwiftAnimalSoothSaying.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAnimalSoothSaying.release.xcconfig"; path = "Target Support Files/Pods-SwiftAnimalSoothSaying/Pods-SwiftAnimalSoothSaying.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 				1348D97C25A46AC10068A1CC /* chat.storyboard */,
 				1348D98025A47A790068A1CC /* list.storyboard */,
 				13EC8DF62568E5AE009C5D1C /* Assets.xcassets */,
-				13EC8DF82568E5AE009C5D1C /* LaunchScreen.storyboard */,
+				1399689225A6149F0028D119 /* LaunchScreen.storyboard */,
 				1371E2F32582611B000D4052 /* CustomCell.swift */,
 				1371E2F42582611B000D4052 /* CustomCell.xib */,
 				136A411925984DAC00F45ED2 /* PersonCell.swift */,
@@ -224,13 +224,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1371E2F62582611C000D4052 /* CustomCell.xib in Resources */,
-				13EC8DFA2568E5AE009C5D1C /* LaunchScreen.storyboard in Resources */,
 				1348D98125A47A790068A1CC /* list.storyboard in Resources */,
 				13BE0E67259DC0CA00AA3990 /* ChatInputAccessoryView.xib in Resources */,
 				136A411C25984DAD00F45ED2 /* PersonCell.xib in Resources */,
 				13EC8E022568EAF6009C5D1C /* GoogleService-Info.plist in Resources */,
 				13EC8DF72568E5AE009C5D1C /* Assets.xcassets in Resources */,
 				1348D97D25A46AC10068A1CC /* chat.storyboard in Resources */,
+				1399689325A6149F0028D119 /* LaunchScreen.storyboard in Resources */,
 				13EC8DF52568E5A5009C5D1C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,14 +309,6 @@
 				13EC8DF42568E5A5009C5D1C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		13EC8DF82568E5AE009C5D1C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13EC8DF92568E5AE009C5D1C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

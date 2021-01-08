@@ -18,6 +18,9 @@ class ChatViewController: UIViewController {
     let db = Firestore.firestore()
     var chatArray = [Message]()
     
+    @IBOutlet weak var tableViewBottomConstrait: NSLayoutConstraint!
+    
+    
     private var chatInputAccessoryView: ChatInputAccessoryView = {
         
         let view = ChatInputAccessoryView()
@@ -30,13 +33,17 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        fetchChatData()
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: cellId)
         tableView.backgroundColor = UIColor(named: "662E1C")
         tableView.allowsSelection = false
         
-        fetchChatData()
+        tableView.keyboardDismissMode = .interactive
+        
+        //tableViewBottomConstrait.constant =
         
     }
     
@@ -77,48 +84,23 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! CustomCell
-                
-        let docRefUsers = db.collection("users").document()
-                
-        docRefUsers.addSnapshotListener { [self] documentSnapshot, error in
-            guard let document = documentSnapshot else {
-                print("Error fetching document: \(error!)")
-                return
-            }
-            guard let data = document.data() else {
-                print("Document data was empty.")
-                return
-            }
-                            
-            let name = (data["userName"] as? String)!
-                            
-            cell.messageTextField.text = chatArray[indexPath.row].message
-            cell.userNameLabel.text = chatArray[indexPath.row].sender
-
-                            
-            if cell.userNameLabel.text == name{
-                                
-                cell.messageTextField.backgroundColor = UIColor.flatGreen()
-                cell.messageTextField.layer.cornerRadius = 20
-                cell.messageTextField.layer.masksToBounds = true
-                            
-            } else {
-                            
-                cell.messageTextField.backgroundColor = UIColor.flatBlue()
-                cell.messageTextField.layer.cornerRadius = 20
-                cell.messageTextField.layer.masksToBounds = true
-                                
-            }
-                            
-        }
+        
         cell.messageText = chatArray[indexPath.row].message
         cell.messageTextField.text = cell.messageText
         cell.userNameLabel.text = chatArray[indexPath.row].sender
+        cell.dateLabel.text = dataFormatterForDataLabel(date: chatArray[indexPath.row].createdAt.dateValue())
+        
+        print(indexPath.row)
+        print(chatArray.count)
+        //print(chatArray[indexPath.row].message)
                 
         return cell
 
     }
+    
+    
     
     func fetchChatData(){
             
@@ -148,25 +130,27 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource{
                 }
                 snapshot.documentChanges.forEach { diff in
                     if (diff.type == .added) {
-                        let data = diff.document.data()
-                        let sender = data["sender"]
-                        let text = data["message"]
-                        
-                        let message = Message()
-                        message.message = text as! String
-                        message.sender = sender as! String
-                        self.tableView.reloadData()
+                        let dic = diff.document.data()
+                        let message = Message(dic: dic)
                         self.chatArray.append(message)
+                        self.tableView.reloadData()
                         
                     }
                     
                 }
             }
-                
-            //全てのdelegateメソッドを呼ぶ
-            self.tableView.reloadData()
 
         }
+        
+    }
+    
+    private func dataFormatterForDataLabel(date: Date) -> String {
+        
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.timeStyle = .short
+        formatter.locale = Locale(identifier: "ja_JP")
+        return formatter.string(from: date)
         
     }
     

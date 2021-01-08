@@ -24,7 +24,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XNb-Yr-ILC"/>
-                        <color key="backgroundColor" red="0.77371710540000005" green="0.0077699688259999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.5861398578" green="0.1786674261" blue="0.058742173020000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="VOJ-tw-TST" firstAttribute="leading" secondItem="XNb-Yr-ILC" secondAttribute="leading" id="3PA-sl-RaM"/>
                             <constraint firstItem="XNb-Yr-ILC" firstAttribute="trailing" secondItem="VOJ-tw-TST" secondAttribute="trailing" id="5wK-7b-Xrt"/>

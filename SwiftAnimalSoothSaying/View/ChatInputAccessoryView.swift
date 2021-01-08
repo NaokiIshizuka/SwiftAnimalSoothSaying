@@ -21,6 +21,10 @@ class ChatInputAccessoryView: UIView {
         
         chatTextView.endEditing(true)
         sendButton.isEnabled = false
+        
+        if chatTextView.text == "" {
+            return
+        }
                 
         var name = String()
         var animal = String()
@@ -49,7 +53,7 @@ class ChatInputAccessoryView: UIView {
             let dateString = formatter.string(from: date)
                     
                     
-            let messageInfo = ["sender":name,"message":message]
+            let messageInfo = ["sender":name,"message":message, "createdAt": Timestamp()] as [String : Any]
                     
             db.collection(animal).document(dateString).setData(messageInfo)
                 

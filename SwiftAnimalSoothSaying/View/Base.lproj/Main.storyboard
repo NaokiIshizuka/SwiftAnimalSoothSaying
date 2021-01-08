@@ -22,11 +22,24 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZF-99-XY7" userLabel="TopView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="298"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sqe-N7-MRj" userLabel="MiddleView">
                                         <rect key="frame" x="0.0" y="299" width="414" height="298"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="dqm-q5-KPM">
+                                                <rect key="frame" x="87" y="29" width="240" height="240"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="dqm-q5-KPM" secondAttribute="height" multiplier="1:1" id="hr3-xV-tIX"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="dqm-q5-KPM" firstAttribute="centerX" secondItem="sqe-N7-MRj" secondAttribute="centerX" id="QsN-ws-xDl"/>
+                                            <constraint firstItem="dqm-q5-KPM" firstAttribute="width" secondItem="sqe-N7-MRj" secondAttribute="width" multiplier="0.57971" id="VFR-jz-NwV"/>
+                                            <constraint firstItem="dqm-q5-KPM" firstAttribute="centerY" secondItem="sqe-N7-MRj" secondAttribute="centerY" id="Z7o-AQ-ZUh"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vnK-4Q-w9a" userLabel="BottomView">
                                         <rect key="frame" x="0.0" y="598" width="414" height="298"/>
@@ -41,7 +54,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="102" height="42"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                                 <state key="normal" title="新規登録">
-                                                                    <color key="titleColor" red="0.51372549019607838" green="0.51372549019607838" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <segue destination="vFZ-ga-obg" kind="show" id="L9I-tF-hpn"/>
@@ -51,7 +64,7 @@
                                                                 <rect key="frame" x="206" y="0.0" width="102" height="42"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                                 <state key="normal" title="ログイン">
-                                                                    <color key="titleColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <segue destination="L6h-2h-XPm" kind="show" id="D8S-EL-fiV"/>
@@ -68,7 +81,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="cjO-6J-N6b" firstAttribute="leading" secondItem="vnK-4Q-w9a" secondAttribute="leading" id="4jr-ei-GBU"/>
                                             <constraint firstItem="cjO-6J-N6b" firstAttribute="centerX" secondItem="vnK-4Q-w9a" secondAttribute="centerX" id="gTc-o3-rdT"/>
@@ -149,7 +162,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PEu-nz-Z5z"/>
-                        <color key="backgroundColor" red="0.61176470588235299" green="0.23529411764705882" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.5861398578" green="0.1786674261" blue="0.058742173020000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="FkT-om-sXb" firstAttribute="centerX" secondItem="MAG-Sb-leH" secondAttribute="centerX" id="0GJ-jT-Xb5"/>
                             <constraint firstItem="0Lr-Mj-t2G" firstAttribute="centerX" secondItem="MAG-Sb-leH" secondAttribute="centerX" id="1lK-by-abM"/>
@@ -161,7 +174,9 @@
                             <constraint firstItem="EHe-h1-Uix" firstAttribute="centerX" secondItem="MAG-Sb-leH" secondAttribute="centerX" id="yrJ-Pz-WG6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hhE-ac-Fd6"/>
+                    <navigationItem key="navigationItem" id="hhE-ac-Fd6">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="brG-tF-SP6"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailTextField" destination="jj9-9H-xKk" id="8Q3-TC-EQD"/>
                         <outlet property="loginButton" destination="0Lr-Mj-t2G" id="Ymz-cU-WEt"/>
@@ -308,7 +323,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hes-my-lSL"/>
-                        <color key="backgroundColor" red="0.61176470588235299" green="0.23529411764705882" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.5861398578" green="0.1786674261" blue="0.058742173020000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="3rJ-Ub-2eV" firstAttribute="centerX" secondItem="HSJ-WS-zYg" secondAttribute="centerX" constant="15" id="20y-0e-2hT"/>
                             <constraint firstItem="ygI-ep-HN5" firstAttribute="centerX" secondItem="HSJ-WS-zYg" secondAttribute="centerX" constant="150" id="3sc-qg-fuL"/>
@@ -336,7 +351,9 @@
                             <constraint firstItem="bKk-af-1Eh" firstAttribute="centerY" secondItem="HSJ-WS-zYg" secondAttribute="centerY" constant="-55" id="xaO-Oe-bld"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VxD-Xb-IW4"/>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="VxD-Xb-IW4">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="SEc-AN-NeD"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="dayTextField" destination="pO9-a5-sEa" id="PgF-8a-cA3"/>
                         <outlet property="emailTextField" destination="LHF-oM-Oy2" id="DuU-zv-l9g"/>
@@ -483,7 +500,7 @@
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pqX-J2-fSK">
                                                         <rect key="frame" x="27" y="139" width="260" height="260"/>
-                                                        <color key="backgroundColor" red="0.71372549019607845" green="0.14901960784313725" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="pqX-J2-fSK" secondAttribute="height" multiplier="1:1" id="fuh-Qa-daP"/>
                                                         </constraints>
@@ -654,7 +671,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zdC-Mi-LxZ"/>
-                        <color key="backgroundColor" red="0.71508914229999998" green="0.1479082108" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.5861398578" green="0.1786674261" blue="0.058742173020000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="xOH-fl-NAN" firstAttribute="height" secondItem="TUr-zA-bqr" secondAttribute="height" multiplier="0.0642857" id="0Ta-M3-MMi"/>
                             <constraint firstAttribute="bottom" secondItem="n9d-Jo-ak2" secondAttribute="bottom" id="6gJ-Uj-5VF"/>
@@ -706,6 +723,7 @@
         <segue reference="SN6-Uo-J91"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="logo" width="2500" height="2500"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

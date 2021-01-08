@@ -23,12 +23,12 @@
                             <constraint firstAttribute="width" constant="244" id="Wwr-Gd-rx7"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="テキストがここに入ります" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qkv-TN-SsZ">
                         <rect key="frame" x="49" y="31" width="294" height="78"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.86274509799999999" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="294" id="0wl-Fy-wCZ"/>
                         </constraints>
@@ -36,19 +36,29 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gf-8V-Pu0">
+                        <rect key="frame" x="352" y="82.5" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="csR-Kx-xZD" firstAttribute="leading" secondItem="y7L-Gj-x1O" secondAttribute="leading" constant="13" id="0HW-vQ-G3t"/>
                     <constraint firstItem="csR-Kx-xZD" firstAttribute="top" secondItem="y7L-Gj-x1O" secondAttribute="top" constant="5" id="9oY-V8-ZfF"/>
                     <constraint firstItem="Qkv-TN-SsZ" firstAttribute="top" secondItem="csR-Kx-xZD" secondAttribute="bottom" constant="5" id="RNx-WG-XQj"/>
                     <constraint firstAttribute="bottom" secondItem="Qkv-TN-SsZ" secondAttribute="bottom" constant="5" id="XNC-wb-Q9X"/>
+                    <constraint firstItem="7Gf-8V-Pu0" firstAttribute="bottom" secondItem="y7L-Gj-x1O" secondAttribute="bottomMargin" id="fJn-0Q-hTH"/>
+                    <constraint firstItem="7Gf-8V-Pu0" firstAttribute="leading" secondItem="Qkv-TN-SsZ" secondAttribute="trailing" constant="9" id="ifn-xi-u4w"/>
                     <constraint firstItem="Qkv-TN-SsZ" firstAttribute="leading" secondItem="y7L-Gj-x1O" secondAttribute="leading" constant="49" id="kbC-QA-FvK"/>
+                    <constraint firstItem="7Gf-8V-Pu0" firstAttribute="bottom" secondItem="y7L-Gj-x1O" secondAttribute="bottomMargin" id="maL-i0-7Jn"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="dateLabel" destination="7Gf-8V-Pu0" id="xgm-p5-mpb"/>
                 <outlet property="messageTextField" destination="Qkv-TN-SsZ" id="LRv-aZ-En1"/>
-                <outlet property="messageTextViewWidthConstrains" destination="0wl-Fy-wCZ" id="gKJ-uZ-kgW"/>
+                <outlet property="messageTextViewWidthConstrains" destination="0wl-Fy-wCZ" id="dtq-TC-ywe"/>
                 <outlet property="userNameLabel" destination="csR-Kx-xZD" id="eCw-oB-Fry"/>
             </connections>
             <point key="canvasLocation" x="57.971014492753625" y="14.0625"/>
@@ -57,9 +67,6 @@
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

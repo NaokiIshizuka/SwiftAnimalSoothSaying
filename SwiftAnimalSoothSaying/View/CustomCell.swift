@@ -27,6 +27,8 @@ class CustomCell: UITableViewCell {
     
     @IBOutlet weak var messageTextField: UITextView!
     
+    @IBOutlet weak var dateLabel: UILabel!
+    
     @IBOutlet weak var messageTextViewWidthConstrains: NSLayoutConstraint!
     
     override func awakeFromNib() {

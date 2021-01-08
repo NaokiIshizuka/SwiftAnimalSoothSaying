@@ -7,10 +7,20 @@
 //
 
 import Foundation
+import Firebase
 
 class Message{
     
     var sender:String = ""
     var message:String = ""
+    var createdAt: Timestamp
+    
+    init(dic: [String: Any]){
+        
+        self.sender = dic["sender"] as? String ?? ""
+        self.message = dic["message"] as? String ?? ""
+        self.createdAt = dic["createdAt"] as? Timestamp ?? Timestamp()
+        
+    }
     
 }
