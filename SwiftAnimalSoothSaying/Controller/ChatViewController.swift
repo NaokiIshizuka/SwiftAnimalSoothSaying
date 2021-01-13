@@ -17,8 +17,9 @@ class ChatViewController: UIViewController {
     let userID = Auth.auth().currentUser?.uid
     let db = Firestore.firestore()
     var chatArray = [Message]()
-    
-    @IBOutlet weak var tableViewBottomConstrait: NSLayoutConstraint!
+    private var safeAreaBottom: CGFloat{
+        self.view.safeAreaInsets.bottom
+    }
     
     
     private var chatInputAccessoryView: ChatInputAccessoryView = {
@@ -33,7 +34,20 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        setupNotification()
+        setupChatTableView()
         fetchChatData()
+        
+    }
+    
+    private func setupNotification() {
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+    }
+    
+    private func setupChatTableView() {
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -43,7 +57,41 @@ class ChatViewController: UIViewController {
         
         tableView.keyboardDismissMode = .interactive
         
-        //tableViewBottomConstrait.constant =
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        print(safeAreaBottom)
+        print("keyboardWillShow")
+        guard let userInfo = notification.userInfo else { return }
+        
+        if let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as AnyObject).cgRectValue {
+            
+            if keyboardFrame.height <= 100 {
+                
+                tableView.contentInset = .init(top: 0, left: 0, bottom: 0, right: 0)
+                tableView.scrollIndicatorInsets = .init(top: 0, left: 0, bottom: 0, right: 0)
+                return
+                
+            }
+            
+            print("keyboardFrame: " , keyboardFrame)
+            let bottom = keyboardFrame.height - safeAreaBottom*2
+            let contentInset = UIEdgeInsets(top: 0, left: 0, bottom: bottom, right: 0)
+            
+            tableView.contentInset = contentInset
+            tableView.scrollIndicatorInsets = contentInset
+            
+        }
+        
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        
+        print("keyboardWillHide")
+        
+        tableView.contentInset = .init(top: 0, left: 0, bottom: 60, right: 0)
+        tableView.scrollIndicatorInsets = .init(top: 0, left: 0, bottom: 60, right: 0)
+        
         
     }
     
@@ -91,13 +139,15 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource{
         cell.messageTextField.text = cell.messageText
         cell.userNameLabel.text = chatArray[indexPath.row].sender
         cell.dateLabel.text = dataFormatterForDataLabel(date: chatArray[indexPath.row].createdAt.dateValue())
-        
-        print(indexPath.row)
-        print(chatArray.count)
-        //print(chatArray[indexPath.row].message)
                 
         return cell
 
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        tableView.scrollToRow(at: IndexPath(row: chatArray.count - 1, section: 0), at:UITableView.ScrollPosition.bottom, animated: true)
+        print("didselect")
     }
     
     

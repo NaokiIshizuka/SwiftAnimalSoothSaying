@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomCell: UITableViewCell {
+class CustomCell: UITableViewCell, UITextViewDelegate {
     
     var messageText: String? {
         
@@ -37,6 +37,8 @@ class CustomCell: UITableViewCell {
         backgroundColor = .clear
         messageTextField.layer.cornerRadius = 15
         
+        messageTextField.delegate = self
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -53,5 +55,13 @@ class CustomCell: UITableViewCell {
         return NSString(string: text).boundingRect(with: size, options: options, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)], context: nil)
         
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        messageTextField.endEditing(true)
+        
+    }
+
+    
     
 }

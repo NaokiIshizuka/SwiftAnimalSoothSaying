@@ -103,7 +103,9 @@ class AnimalViewController: UIViewController {
                         return
                     }
                     
-                    characterDetail = data3[animalCharacter] as! String
+                    print(animalCharacter)
+                    
+                    characterDetail = data3[ animalCharacter] as! String
                     
                     let characterDetailArray = characterDetail.replacingOccurrences(of: " ", with: "\n")
                     

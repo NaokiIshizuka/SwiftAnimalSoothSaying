@@ -19,7 +19,6 @@ class ChatInputAccessoryView: UIView {
     
     @IBAction func tappedSendAction(_ sender: Any) {
         
-        chatTextView.endEditing(true)
         sendButton.isEnabled = false
         
         if chatTextView.text == "" {
@@ -56,6 +55,8 @@ class ChatInputAccessoryView: UIView {
             let messageInfo = ["sender":name,"message":message, "createdAt": Timestamp()] as [String : Any]
                     
             db.collection(animal).document(dateString).setData(messageInfo)
+            
+            chatTextView.endEditing(true)
                 
         }
                 

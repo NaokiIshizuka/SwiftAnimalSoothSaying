@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var emailTextField: UITextField!
     
@@ -21,6 +21,8 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         loginButton.layer.cornerRadius = 10
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
         
     }
     
@@ -49,6 +51,11 @@ class LoginViewController: UIViewController {
         passwordTextField.endEditing(true)
         
         
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            textField.resignFirstResponder()
+            return true
     }
     
 

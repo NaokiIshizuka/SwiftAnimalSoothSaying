@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t94-ic-PCq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t94-ic-PCq">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -71,6 +71,10 @@
                                                                 </connections>
                                                             </button>
                                                         </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="PU2-Lg-VFt" firstAttribute="centerY" secondItem="ycM-18-UmR" secondAttribute="centerY" id="5Re-rH-Pg5"/>
+                                                            <constraint firstItem="lly-2q-N4b" firstAttribute="centerY" secondItem="ycM-18-UmR" secondAttribute="centerY" id="KRW-gU-CnN"/>
+                                                        </constraints>
                                                     </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.40000000000000002" green="0.1803921568627451" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -101,7 +105,9 @@
                             <constraint firstAttribute="bottom" secondItem="C0G-Pl-aRv" secondAttribute="bottom" id="ujJ-s1-gBi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="nRY-vy-T6Z"/>
+                    <navigationItem key="navigationItem" id="nRY-vy-T6Z">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="GAJ-hh-obC"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -702,7 +708,9 @@
             <objects>
                 <navigationController wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" id="t94-ic-PCq" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="Hl1-3H-2kH"/>
+                    <navigationItem key="navigationItem" id="Hl1-3H-2kH">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="8Hr-jU-4MW"/>
+                    </navigationItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sFL-YX-0Qa">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -720,7 +728,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SN6-Uo-J91"/>
+        <segue reference="vC2-0b-Omw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="logo" width="2500" height="2500"/>

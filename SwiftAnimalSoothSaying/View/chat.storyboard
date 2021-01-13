@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,10 +33,11 @@
                             <constraint firstItem="IOy-Fb-AQg" firstAttribute="bottom" secondItem="DxG-gl-fD2" secondAttribute="bottom" constant="-50" id="xuc-Zf-Q08"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="7jG-XG-eML"/>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="7jG-XG-eML">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="gUm-qu-dXm"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="IOy-Fb-AQg" id="JEH-6k-5fy"/>
-                        <outlet property="tableViewBottomConstrait" destination="xuc-Zf-Q08" id="Jna-Jc-mgV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Je5-Jn-uh1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
