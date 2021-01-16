@@ -38,6 +38,28 @@ class ChatViewController: UIViewController {
         setupChatTableView()
         fetchChatData()
         
+        let docRefUsers = db.collection("users").document(String(userID!))
+        
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Helvetica-Bold", size: 25) as Any]
+            
+        docRefUsers.addSnapshotListener { [self] documentSnapshot, error in
+            guard let document = documentSnapshot else {
+                print("Error fetching document: \(error!)")
+                return
+            }
+            guard let data = document.data() else {
+                print("Document data was empty.")
+                return
+            }
+                
+            let animal = (data["animal"] as? String)!
+            
+            self.navigationItem.title = animal
+            
+        }
+        
     }
     
     private func setupNotification() {

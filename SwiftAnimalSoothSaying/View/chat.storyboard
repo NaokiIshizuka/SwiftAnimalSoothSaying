@@ -49,9 +49,16 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yCN-AD-8ll" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qhs-lF-1iA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="chevron.backward.2" catalog="system" id="qhs-lF-1iA">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -63,4 +70,7 @@
             <point key="canvasLocation" x="11.594202898550726" y="12.723214285714285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chevron.backward.2" catalog="system" width="128" height="105"/>
+    </resources>
 </document>

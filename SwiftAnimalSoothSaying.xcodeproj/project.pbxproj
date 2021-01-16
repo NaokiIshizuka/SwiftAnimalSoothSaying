@@ -33,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		130939E825AFD1E500E39C1A /* SwiftAnimalSoothSaying.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftAnimalSoothSaying.entitlements; sourceTree = "<group>"; };
 		133D840C2573F2450038A496 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		133D840F2574AFDC0038A496 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1348D97C25A46AC10068A1CC /* chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = chat.storyboard; sourceTree = "<group>"; };
@@ -95,6 +96,7 @@
 		13EC8DEC2568E5A5009C5D1C /* SwiftAnimalSoothSaying */ = {
 			isa = PBXGroup;
 			children = (
+				130939E825AFD1E500E39C1A /* SwiftAnimalSoothSaying.entitlements */,
 				13EE7104256A494200AC6B6B /* Controller */,
 				13EE7102256A493C00AC6B6B /* View */,
 				13EE7100256A491800AC6B6B /* Model */,
@@ -433,7 +435,9 @@
 			baseConfigurationReference = BC9726F690A43E3DFB37B419 /* Pods-SwiftAnimalSoothSaying.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftAnimalSoothSaying/SwiftAnimalSoothSaying.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.2;
 				DEVELOPMENT_TEAM = UFNQPY3S9J;
 				INFOPLIST_FILE = SwiftAnimalSoothSaying/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -453,7 +457,9 @@
 			baseConfigurationReference = EFFB301A1BC61282ACFF61A3 /* Pods-SwiftAnimalSoothSaying.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftAnimalSoothSaying/SwiftAnimalSoothSaying.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.2;
 				DEVELOPMENT_TEAM = UFNQPY3S9J;
 				INFOPLIST_FILE = SwiftAnimalSoothSaying/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
