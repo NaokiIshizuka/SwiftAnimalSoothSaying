@@ -50,7 +50,7 @@
 		13BE0E66259DC0CA00AA3990 /* ChatInputAccessoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatInputAccessoryView.xib; sourceTree = "<group>"; };
 		13BE0E69259DC22600AA3990 /* ChatInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputAccessoryView.swift; sourceTree = "<group>"; };
 		13BE0E6E25A028F300AA3990 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
-		13EC8DEA2568E5A5009C5D1C /* SwiftAnimalSoothSaying.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAnimalSoothSaying.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13EC8DEA2568E5A5009C5D1C /* どうぶつ占い.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "どうぶつ占い.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13EC8DED2568E5A5009C5D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13EC8DEF2568E5A5009C5D1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		13EC8DF12568E5A5009C5D1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		13EC8DEB2568E5A5009C5D1C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13EC8DEA2568E5A5009C5D1C /* SwiftAnimalSoothSaying.app */,
+				13EC8DEA2568E5A5009C5D1C /* どうぶつ占い.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,7 +184,7 @@
 			);
 			name = SwiftAnimalSoothSaying;
 			productName = SwiftAnimalSoothSaying;
-			productReference = 13EC8DEA2568E5A5009C5D1C /* SwiftAnimalSoothSaying.app */;
+			productReference = 13EC8DEA2568E5A5009C5D1C /* どうぶつ占い.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -437,7 +437,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftAnimalSoothSaying/SwiftAnimalSoothSaying.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.2;
+				CURRENT_PROJECT_VERSION = 1.0.4;
 				DEVELOPMENT_TEAM = UFNQPY3S9J;
 				INFOPLIST_FILE = SwiftAnimalSoothSaying/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -446,7 +446,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.naoki.SwiftAnimalSoothSaying;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "どうぶつ占い";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -459,7 +459,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftAnimalSoothSaying/SwiftAnimalSoothSaying.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.2;
+				CURRENT_PROJECT_VERSION = 1.0.4;
 				DEVELOPMENT_TEAM = UFNQPY3S9J;
 				INFOPLIST_FILE = SwiftAnimalSoothSaying/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -468,7 +468,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.naoki.SwiftAnimalSoothSaying;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "どうぶつ占い";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

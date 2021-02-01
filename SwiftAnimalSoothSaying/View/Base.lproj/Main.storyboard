@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftAnimalSoothSaying" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="どうぶつ占い" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,7 +116,7 @@
         <!--Login View Controller-->
         <scene sceneID="Msg-7W-TkH">
             <objects>
-                <viewController id="L6h-2h-XPm" customClass="LoginViewController" customModule="SwiftAnimalSoothSaying" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="L6h-2h-XPm" customClass="LoginViewController" customModule="どうぶつ占い" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MAG-Sb-leH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,7 +197,7 @@
         <!--Register View Controller-->
         <scene sceneID="jeT-vh-bVU">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="vFZ-ga-obg" customClass="RegisterViewController" customModule="SwiftAnimalSoothSaying" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="vFZ-ga-obg" customClass="RegisterViewController" customModule="どうぶつ占い" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HSJ-WS-zYg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -378,7 +378,7 @@
         <!--View Controller-->
         <scene sceneID="GoU-ad-4Gh">
             <objects>
-                <viewController storyboardIdentifier="animal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7pb-Zv-bfl" customClass="ViewController" customModule="SwiftAnimalSoothSaying" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="animal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7pb-Zv-bfl" customClass="ViewController" customModule="どうぶつ占い" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K7Z-XY-jON">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -425,7 +425,7 @@
         <!--Animal View Controller-->
         <scene sceneID="bda-uh-xfw">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="qoB-tK-gic" customClass="AnimalViewController" customModule="SwiftAnimalSoothSaying" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="qoB-tK-gic" customClass="AnimalViewController" customModule="どうぶつ占い" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TUr-zA-bqr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -598,7 +598,6 @@
                                                 <constraints>
                                                     <constraint firstItem="DOv-fU-1hV" firstAttribute="width" secondItem="cHH-M6-mQu" secondAttribute="width" multiplier="0.83758" id="54s-Fd-4s7"/>
                                                     <constraint firstAttribute="bottom" secondItem="DOv-fU-1hV" secondAttribute="bottom" constant="8" id="CLf-UU-aAt"/>
-                                                    <constraint firstItem="DOv-fU-1hV" firstAttribute="leading" secondItem="cHH-M6-mQu" secondAttribute="leading" constant="25.5" id="GWJ-ph-08H"/>
                                                     <constraint firstItem="DOv-fU-1hV" firstAttribute="top" secondItem="4ZX-Qi-iDt" secondAttribute="bottom" id="apQ-3y-PNi"/>
                                                     <constraint firstItem="4ZX-Qi-iDt" firstAttribute="centerX" secondItem="cHH-M6-mQu" secondAttribute="centerX" id="dQp-hJ-t0W"/>
                                                     <constraint firstItem="4ZX-Qi-iDt" firstAttribute="top" secondItem="cHH-M6-mQu" secondAttribute="top" constant="10" id="eWK-d8-ro3"/>
