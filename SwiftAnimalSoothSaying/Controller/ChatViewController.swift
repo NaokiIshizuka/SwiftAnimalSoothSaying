@@ -34,6 +34,8 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        self.navigationController?.navigationBar.tintColor = .white
+        
         setupNotification()
         setupChatTableView()
         fetchChatData()

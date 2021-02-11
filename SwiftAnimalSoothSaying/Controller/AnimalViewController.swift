@@ -48,6 +48,9 @@ class AnimalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.tintColor = .white
+        
+        
         animalDetailView.layer.cornerRadius = 10
         
         logoutButton.titleLabel?.adjustsFontSizeToFitWidth = true

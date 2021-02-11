@@ -39,6 +39,8 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.tintColor = .white
 
         registerButton.layer.cornerRadius = 10
         

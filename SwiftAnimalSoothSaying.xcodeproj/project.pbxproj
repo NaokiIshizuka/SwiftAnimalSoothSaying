@@ -20,6 +20,11 @@
 		1371E2F62582611C000D4052 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1371E2F42582611B000D4052 /* CustomCell.xib */; };
 		1378327D25777063005E46E8 /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378327C25777063005E46E8 /* AnimalViewController.swift */; };
 		1399689325A6149F0028D119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1399689225A6149F0028D119 /* LaunchScreen.storyboard */; };
+		13BB9D1325CBC401003828FF /* AnimalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB9D1225CBC401003828FF /* AnimalListViewController.swift */; };
+		13BB9D1725CBD4FF003828FF /* AnimalListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB9D1525CBD4FE003828FF /* AnimalListTableViewCell.swift */; };
+		13BB9D1825CBD4FF003828FF /* AnimalListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13BB9D1625CBD4FE003828FF /* AnimalListTableViewCell.xib */; };
+		13BB9D1B25CF76EE003828FF /* animalList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB9D1A25CF76EE003828FF /* animalList.storyboard */; };
+		13BB9D5525CFD747003828FF /* AnimalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB9D5425CFD747003828FF /* AnimalDetailViewController.swift */; };
 		13BE0E67259DC0CA00AA3990 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13BE0E66259DC0CA00AA3990 /* ChatInputAccessoryView.xib */; };
 		13BE0E6A259DC22600AA3990 /* ChatInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BE0E69259DC22600AA3990 /* ChatInputAccessoryView.swift */; };
 		13BE0E6F25A028F300AA3990 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BE0E6E25A028F300AA3990 /* UIColor-Extension.swift */; };
@@ -29,11 +34,12 @@
 		13EC8DF52568E5A5009C5D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EC8DF32568E5A5009C5D1C /* Main.storyboard */; };
 		13EC8DF72568E5AE009C5D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13EC8DF62568E5AE009C5D1C /* Assets.xcassets */; };
 		13EC8E022568EAF6009C5D1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13EC8E012568EAF5009C5D1C /* GoogleService-Info.plist */; };
-		9FF97A84F46ECA4FF5B73FB9 /* Pods_SwiftAnimalSoothSaying.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A821BCAD80C912B9F690618 /* Pods_SwiftAnimalSoothSaying.framework */; };
+		B00EBFE443202C1BA8324AAE /* Pods_SwiftAnimalSoothSaying.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0DCB6DE9D02929780362C6 /* Pods_SwiftAnimalSoothSaying.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		130939E825AFD1E500E39C1A /* SwiftAnimalSoothSaying.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftAnimalSoothSaying.entitlements; sourceTree = "<group>"; };
+		13195DF5B31D13A3F5E89945 /* Pods-SwiftAnimalSoothSaying.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAnimalSoothSaying.release.xcconfig"; path = "Target Support Files/Pods-SwiftAnimalSoothSaying/Pods-SwiftAnimalSoothSaying.release.xcconfig"; sourceTree = "<group>"; };
 		133D840C2573F2450038A496 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		133D840F2574AFDC0038A496 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1348D97C25A46AC10068A1CC /* chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = chat.storyboard; sourceTree = "<group>"; };
@@ -47,6 +53,11 @@
 		1371E2F42582611B000D4052 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		1378327C25777063005E46E8 /* AnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
 		1399689225A6149F0028D119 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		13BB9D1225CBC401003828FF /* AnimalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListViewController.swift; sourceTree = "<group>"; };
+		13BB9D1525CBD4FE003828FF /* AnimalListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListTableViewCell.swift; sourceTree = "<group>"; };
+		13BB9D1625CBD4FE003828FF /* AnimalListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalListTableViewCell.xib; sourceTree = "<group>"; };
+		13BB9D1A25CF76EE003828FF /* animalList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = animalList.storyboard; sourceTree = "<group>"; };
+		13BB9D5425CFD747003828FF /* AnimalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailViewController.swift; sourceTree = "<group>"; };
 		13BE0E66259DC0CA00AA3990 /* ChatInputAccessoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatInputAccessoryView.xib; sourceTree = "<group>"; };
 		13BE0E69259DC22600AA3990 /* ChatInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputAccessoryView.swift; sourceTree = "<group>"; };
 		13BE0E6E25A028F300AA3990 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
@@ -58,9 +69,8 @@
 		13EC8DF62568E5AE009C5D1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13EC8DFB2568E5AE009C5D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13EC8E012568EAF5009C5D1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		6A821BCAD80C912B9F690618 /* Pods_SwiftAnimalSoothSaying.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftAnimalSoothSaying.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC9726F690A43E3DFB37B419 /* Pods-SwiftAnimalSoothSaying.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAnimalSoothSaying.debug.xcconfig"; path = "Target Support Files/Pods-SwiftAnimalSoothSaying/Pods-SwiftAnimalSoothSaying.debug.xcconfig"; sourceTree = "<group>"; };
-		EFFB301A1BC61282ACFF61A3 /* Pods-SwiftAnimalSoothSaying.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAnimalSoothSaying.release.xcconfig"; path = "Target Support Files/Pods-SwiftAnimalSoothSaying/Pods-SwiftAnimalSoothSaying.release.xcconfig"; sourceTree = "<group>"; };
+		761658CD5A75D07DD29AAFEF /* Pods-SwiftAnimalSoothSaying.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAnimalSoothSaying.debug.xcconfig"; path = "Target Support Files/Pods-SwiftAnimalSoothSaying/Pods-SwiftAnimalSoothSaying.debug.xcconfig"; sourceTree = "<group>"; };
+		AD0DCB6DE9D02929780362C6 /* Pods_SwiftAnimalSoothSaying.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftAnimalSoothSaying.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,20 +78,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FF97A84F46ECA4FF5B73FB9 /* Pods_SwiftAnimalSoothSaying.framework in Frameworks */,
+				B00EBFE443202C1BA8324AAE /* Pods_SwiftAnimalSoothSaying.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00AA57DEE7B037CDDA490F19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD0DCB6DE9D02929780362C6 /* Pods_SwiftAnimalSoothSaying.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		13EC8DE12568E5A5009C5D1C = {
 			isa = PBXGroup;
 			children = (
 				13EC8DEC2568E5A5009C5D1C /* SwiftAnimalSoothSaying */,
 				13EC8DEB2568E5A5009C5D1C /* Products */,
 				A34C08DF83E1F53DB5903A0D /* Pods */,
-				C463E5CCF9A072A0E0AAC8CE /* Frameworks */,
+				00AA57DEE7B037CDDA490F19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +135,7 @@
 		13EE7102256A493C00AC6B6B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				13BB9D1A25CF76EE003828FF /* animalList.storyboard */,
 				13EC8DF32568E5A5009C5D1C /* Main.storyboard */,
 				1348D97C25A46AC10068A1CC /* chat.storyboard */,
 				1348D98025A47A790068A1CC /* list.storyboard */,
@@ -126,6 +145,8 @@
 				1371E2F42582611B000D4052 /* CustomCell.xib */,
 				136A411925984DAC00F45ED2 /* PersonCell.swift */,
 				136A411A25984DAC00F45ED2 /* PersonCell.xib */,
+				13BB9D1525CBD4FE003828FF /* AnimalListTableViewCell.swift */,
+				13BB9D1625CBD4FE003828FF /* AnimalListTableViewCell.xib */,
 				13BE0E69259DC22600AA3990 /* ChatInputAccessoryView.swift */,
 				13BE0E66259DC0CA00AA3990 /* ChatInputAccessoryView.xib */,
 			);
@@ -143,6 +164,8 @@
 				1378327C25777063005E46E8 /* AnimalViewController.swift */,
 				1371E2F0257F6E1A000D4052 /* ChatViewController.swift */,
 				136A41162595BE4F00F45ED2 /* ListViewController.swift */,
+				13BB9D1225CBC401003828FF /* AnimalListViewController.swift */,
+				13BB9D5425CFD747003828FF /* AnimalDetailViewController.swift */,
 				13BE0E6E25A028F300AA3990 /* UIColor-Extension.swift */,
 			);
 			path = Controller;
@@ -151,18 +174,10 @@
 		A34C08DF83E1F53DB5903A0D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BC9726F690A43E3DFB37B419 /* Pods-SwiftAnimalSoothSaying.debug.xcconfig */,
-				EFFB301A1BC61282ACFF61A3 /* Pods-SwiftAnimalSoothSaying.release.xcconfig */,
+				761658CD5A75D07DD29AAFEF /* Pods-SwiftAnimalSoothSaying.debug.xcconfig */,
+				13195DF5B31D13A3F5E89945 /* Pods-SwiftAnimalSoothSaying.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		C463E5CCF9A072A0E0AAC8CE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6A821BCAD80C912B9F690618 /* Pods_SwiftAnimalSoothSaying.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,11 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13EC8DFE2568E5AE009C5D1C /* Build configuration list for PBXNativeTarget "SwiftAnimalSoothSaying" */;
 			buildPhases = (
-				22FC5058F5E17F84448B4CEA /* [CP] Check Pods Manifest.lock */,
+				5462210849483120618BAE00 /* [CP] Check Pods Manifest.lock */,
 				13EC8DE62568E5A5009C5D1C /* Sources */,
 				13EC8DE72568E5A5009C5D1C /* Frameworks */,
 				13EC8DE82568E5A5009C5D1C /* Resources */,
-				6129436EBC92F398E43352A8 /* [CP] Embed Pods Frameworks */,
+				9B785755C80C3588DAEDA404 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,7 +242,9 @@
 			files = (
 				1371E2F62582611C000D4052 /* CustomCell.xib in Resources */,
 				1348D98125A47A790068A1CC /* list.storyboard in Resources */,
+				13BB9D1B25CF76EE003828FF /* animalList.storyboard in Resources */,
 				13BE0E67259DC0CA00AA3990 /* ChatInputAccessoryView.xib in Resources */,
+				13BB9D1825CBD4FF003828FF /* AnimalListTableViewCell.xib in Resources */,
 				136A411C25984DAD00F45ED2 /* PersonCell.xib in Resources */,
 				13EC8E022568EAF6009C5D1C /* GoogleService-Info.plist in Resources */,
 				13EC8DF72568E5AE009C5D1C /* Assets.xcassets in Resources */,
@@ -240,7 +257,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		22FC5058F5E17F84448B4CEA /* [CP] Check Pods Manifest.lock */ = {
+		5462210849483120618BAE00 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -262,7 +279,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6129436EBC92F398E43352A8 /* [CP] Embed Pods Frameworks */ = {
+		9B785755C80C3588DAEDA404 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -288,16 +305,19 @@
 			files = (
 				133D840D2573F2450038A496 /* LoginViewController.swift in Sources */,
 				133D84102574AFDC0038A496 /* RegisterViewController.swift in Sources */,
+				13BB9D1325CBC401003828FF /* AnimalListViewController.swift in Sources */,
 				13EC8DF22568E5A5009C5D1C /* ViewController.swift in Sources */,
 				136FC5E125836F8100CF8055 /* Message.swift in Sources */,
 				1371E2F1257F6E1B000D4052 /* ChatViewController.swift in Sources */,
 				13EC8DEE2568E5A5009C5D1C /* AppDelegate.swift in Sources */,
 				1378327D25777063005E46E8 /* AnimalViewController.swift in Sources */,
 				136A411B25984DAD00F45ED2 /* PersonCell.swift in Sources */,
+				13BB9D1725CBD4FF003828FF /* AnimalListTableViewCell.swift in Sources */,
 				13BE0E6F25A028F300AA3990 /* UIColor-Extension.swift in Sources */,
 				13BE0E6A259DC22600AA3990 /* ChatInputAccessoryView.swift in Sources */,
 				1371E2F52582611B000D4052 /* CustomCell.swift in Sources */,
 				136A41172595BE5000F45ED2 /* ListViewController.swift in Sources */,
+				13BB9D5525CFD747003828FF /* AnimalDetailViewController.swift in Sources */,
 				13EC8DF02568E5A5009C5D1C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,7 +452,7 @@
 		};
 		13EC8DFF2568E5AE009C5D1C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC9726F690A43E3DFB37B419 /* Pods-SwiftAnimalSoothSaying.debug.xcconfig */;
+			baseConfigurationReference = 761658CD5A75D07DD29AAFEF /* Pods-SwiftAnimalSoothSaying.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftAnimalSoothSaying/SwiftAnimalSoothSaying.entitlements;
@@ -454,7 +474,7 @@
 		};
 		13EC8E002568E5AE009C5D1C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFFB301A1BC61282ACFF61A3 /* Pods-SwiftAnimalSoothSaying.release.xcconfig */;
+			baseConfigurationReference = 13195DF5B31D13A3F5E89945 /* Pods-SwiftAnimalSoothSaying.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftAnimalSoothSaying/SwiftAnimalSoothSaying.entitlements;

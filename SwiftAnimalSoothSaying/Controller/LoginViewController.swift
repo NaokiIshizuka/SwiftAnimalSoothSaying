@@ -19,6 +19,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.tintColor = .white
 
         loginButton.layer.cornerRadius = 10
         emailTextField.delegate = self
