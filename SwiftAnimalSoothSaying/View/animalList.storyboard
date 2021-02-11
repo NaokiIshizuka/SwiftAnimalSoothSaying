@@ -23,7 +23,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xDF-Jh-d18"/>
-                        <color key="backgroundColor" red="0.6588235294" green="0.20392156859999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.52941176470588236" green="0.16276994349999999" blue="0.054833300410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="vF4-96-tlf" firstAttribute="bottom" secondItem="xDF-Jh-d18" secondAttribute="bottom" id="BMN-uo-krK"/>
                             <constraint firstItem="vF4-96-tlf" firstAttribute="top" secondItem="xDF-Jh-d18" secondAttribute="top" id="Hli-Cw-3qz"/>
@@ -129,7 +129,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="daK-VX-MTw"/>
-                        <color key="backgroundColor" red="0.71372549019607845" green="0.1518347263" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.52941176470588236" green="0.16276994349999999" blue="0.054833300410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="9HT-sb-Yby" firstAttribute="height" secondItem="uRH-er-LCg" secondAttribute="height" multiplier="0.225446" id="4aH-wK-30m"/>
                             <constraint firstItem="zEI-9f-CNS" firstAttribute="height" secondItem="uRH-er-LCg" secondAttribute="height" multiplier="0.101562" id="60x-v3-vmT"/>
@@ -161,7 +161,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="laV-NG-GwF">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.77371710540000005" green="0.0077699688259999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.52941176470588236" green="0.16276994349999999" blue="0.054833300410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
