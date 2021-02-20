@@ -14,6 +14,8 @@ class AnimalListViewController: UIViewController{
     
     var loginBarButtonItem: UIBarButtonItem!
     
+    var examineBarButtonItem: UIBarButtonItem!
+    
     let animal = ["狼", "こじか", "猿", "チーター", "黒ひょう", "ライオン", "トラ", "たぬき", "コアラ", "ゾウ", "ひつじ", "ペガサス"]
 
     override func viewDidLoad() {
@@ -28,9 +30,13 @@ class AnimalListViewController: UIViewController{
         
         self.navigationController?.navigationBar.tintColor = .white
         
-        loginBarButtonItem = UIBarButtonItem(title: "ログインして占う",  style: .done, target: self, action: #selector(barButtonTapped(_:)))
+        loginBarButtonItem = UIBarButtonItem(title: "ログインする",  style: .done, target: self, action: #selector(barButtonTapped(_:)))
+        
+        examineBarButtonItem = UIBarButtonItem(title: "占う", style: .done, target: self, action: #selector(examineBarButtonTapped(_:)))
         
         self.navigationItem.rightBarButtonItems = [loginBarButtonItem]
+        
+        self.navigationItem.leftBarButtonItems = [examineBarButtonItem]
         
     }
     
@@ -38,6 +44,14 @@ class AnimalListViewController: UIViewController{
     
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let ViewController = storyboard.instantiateViewController(withIdentifier: "ViewController")
+        navigationController?.pushViewController(ViewController, animated: true)
+        
+    }
+    
+    @objc func examineBarButtonTapped(_ sender: UIBarButtonItem) {
+    
+        let storyboard = UIStoryboard.init(name: "examineAnimal", bundle: nil)
+        let ViewController = storyboard.instantiateViewController(withIdentifier: "ExamineAnimalViewController")
         navigationController?.pushViewController(ViewController, animated: true)
         
     }
