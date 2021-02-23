@@ -42,9 +42,7 @@ class ChatViewController: UIViewController {
         
         let docRefUsers = db.collection("users").document(String(userID!))
         
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
-        
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Helvetica-Bold", size: 25) as Any]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Helvetica-Bold", size: 25) as Any, .foregroundColor: UIColor.white]
             
         docRefUsers.addSnapshotListener { [self] documentSnapshot, error in
             guard let document = documentSnapshot else {
